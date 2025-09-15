@@ -9,3 +9,5 @@ select * from courses where year = 1 AND period = 'I semestre' LIMIT 0, 1000	286
 select * from exams where HOUR(hour) > 14 AND DATE(date) = '2020-06-20' LIMIT 0, 1000	14 row(s) returned	0.000 sec / 0.000 sec
 
 select * from degrees where level = "magistrale" LIMIT 0, 1000	38 row(s) returned	0.000 sec / 0.000 sec
+
+select * from departments LIMIT 0, 1000	12 row(s) returned	0.000 sec / 0.000 sec
