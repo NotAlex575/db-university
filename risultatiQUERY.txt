@@ -7,3 +7,5 @@ SELECT * FROM students WHERE DAY(date_of_birth) > 30 LIMIT 0, 1000	90 row(s) ret
 select * from courses where year = 1 AND period = 'I semestre' LIMIT 0, 1000	286 row(s) returned	0.000 sec / 0.000 sec
 
 select * from exams where HOUR(hour) > 14 AND DATE(date) = '2020-06-20' LIMIT 0, 1000	14 row(s) returned	0.000 sec / 0.000 sec
+
+select * from degrees where level = "magistrale" LIMIT 0, 1000	38 row(s) returned	0.000 sec / 0.000 sec
