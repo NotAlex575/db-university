@@ -5,3 +5,5 @@ select * from degrees inner join departments on degrees.department_id = departme
 select * from courses inner join course_teacher on courses.id= course_teacher.course_id  inner join teachers on course_teacher.teacher_id = teachers.id where teachers.id = 44 LIMIT 0, 10000	11 row(s) returned	0.000 sec / 0.000 sec
 
 select * from students join degrees on students.degree_id = degrees.id join departments on degrees.department_id = departments.id order by students.name, students.surname LIMIT 0, 10000	5000 row(s) returned	0.063 sec / 0.015 sec
+
+select * from degrees join courses on degrees.id = courses.degree_id join course_teacher on courses.id = course_teacher.course_id join teachers on course_teacher.teacher_id = teachers.id LIMIT 0, 10000	1317 row(s) returned	0.000 sec / 0.016 sec
