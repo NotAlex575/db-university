@@ -1,1 +1,3 @@
 select * from students inner join degrees on students.degree_id = degree_id where degrees.name = "Corso di Laurea in economia" LIMIT 0, 10000	5000 row(s) returned	0.000 sec / 0.000 sec
+
+select * from degrees inner join departments on degrees.department_id = department_id where departments.name = "Dipartimento di Neuroscienze" and degrees.level = "magistrale" LIMIT 0, 10000	38 row(s) returned	0.000 sec / 0.000 sec
