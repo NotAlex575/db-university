@@ -1,0 +1,1 @@
+select * from students inner join degrees on students.degree_id = degree_id where degrees.name = "Corso di Laurea in economia" LIMIT 0, 10000	5000 row(s) returned	0.000 sec / 0.000 sec
